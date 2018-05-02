@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/main.css">
 </head>
 
 <body>
+<div class="container">
+<div class="row">
+    <div class="col">
     <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group">
             <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
             <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
         </div>
+        </div>
     </form>
+</div> 
+<div class="row">
+    <div class="col">
     <div id="songs">
-
-    </div>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <!-- <ul>
+        <li><h3>Title: </h3></li>
+        <li><h3>Album: </h3></li>
+        <li><h3>Artist: </h3></li>
+        <li><h3>Collection: </h3></li>
+        <li><h3>Price: </h3></li>
+        <li><h3>Preview: <audio controls><source src="" type="audio/mpeg"></audio></h3></li>
+        </ul> -->
+    </div> 
+</div>
+</div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="itunes-service.js"></script>
     <script src="itunes-controller.js"></script>
     <script src="app.js"></script>
+</div>
 </body>
 
 </html>
+

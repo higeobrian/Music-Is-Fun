@@ -5,6 +5,12 @@ function ItunesService(){
       //allows requests to localhost: 8080 otherwise blocked by itunes
       var url = 'https://itunes.apple.com/search?term=' + artist;
       
+      function swapUrlSize(url, pixels) {
+        var sizeString = `${pixels}x${pixels}`;
+        var newURL = url.replace("60x60", sizeString);
+        return newURL;
+      }
+
       //changes the button to loading while songs load
       $('#get-music-button').text('LOADING....');
       
@@ -13,11 +19,11 @@ function ItunesService(){
         var songList = response.results.map(function (song) {
                   return {
                       title: song.trackName,
-                      albumArt: song.artworkUrl60,
+                      albumArt: swapUrlSize(song.artworkUrl60, 150),
                       artist: song.artistName,
                       collection: song.collectionName,
                       price: song.collectionPrice,
-                      preview: song.previewUrl
+                      preview: song.previewUrl,
                     };
                 })
         //changes button back to GET MUSIC once songs are loaded
