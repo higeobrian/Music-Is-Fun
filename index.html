@@ -11,34 +11,29 @@
 </head>
 
 <body>
-<div class="container">
-<div class="row">
-    <div class="col">
+<div class="container-fluid">
     <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group">
             <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
             <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
         </div>
-        </div>
     </form>
-</div> 
-<div class="row">
-    <div class="col">
+<div class="row" id="background">
+        <div class="col6">
     <div id="songs">
         <!-- <ul>
-        <li><h3>Title: </h3></li>
-        <li><h3>Album: </h3></li>
-        <li><h3>Artist: </h3></li>
-        <li><h3>Collection: </h3></li>
-        <li><h3>Price: </h3></li>
-        <li><h3>Preview: <audio controls><source src="" type="audio/mpeg"></audio></h3></li>
+        <li><h5>Title: ""</h5></li>
+        <li><h6>Album:<br></br></h6></li>
+        <li><h6>Artist: ""</h6></li>
+        <li><h6>Collection: ""</h6></li>
+        <li><h6>Price: ""</h6></li>
+        <li><h6>Preview:<br></br><audio controls><source src="" type="audio/mpeg"></audio></h6></li>
         </ul> -->
     </div> 
 </div>
 </div>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="itunes-service.js"></script>
     <script src="itunes-controller.js"></script>
     <script src="app.js"></script>

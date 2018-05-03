@@ -1,0 +1,14 @@
+#background{
+    background-image: url(273181-music.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-width: 400px;
+    min-height: 4100px;
+    margin-top: 3px;
+}
+
+.container-fluid{
+    background-color: rgb(195, 238, 195);
+    margin-left: -14px;
+}
+
